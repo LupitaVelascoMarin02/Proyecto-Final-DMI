@@ -4,7 +4,15 @@ import { StyleSheet, Text, TouchableOpacity, View, ScrollView, Linking,} from 'r
 import { auth } from '../firebase'
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper'
 import { Ionicons } from "@expo/vector-icons"
-import { Link } from '@react-navigation/native'
+import styled from 'styled-components/native';
+
+const StyledView = styled.View`
+    flex: 1px;
+    background-Color: #fff;
+    justify-Content: space-between;
+    align-Items: stretch;
+`;
+
 
 const HomeScreen = () => {
   const navigation = useNavigation()

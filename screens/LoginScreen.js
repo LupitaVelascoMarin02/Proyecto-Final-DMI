@@ -2,6 +2,12 @@ import { useNavigation } from '@react-navigation/core'
 import React, { useEffect, useState } from 'react'
 import { KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { auth } from '../firebase'
+import styled from 'styled-components/native';
+
+const StyledView = styled.View`
+    flex: 1px;
+    background-Color: white;
+`;
 
 const LoginScreen = () => {
   const [email, setEmail] = useState('')
